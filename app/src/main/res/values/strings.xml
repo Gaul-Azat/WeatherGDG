@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeatherGDG</string>
+    <string name="action_settings">Settings</string>
+    <string name="last_update">Последнее обновление:</string>
+    <string name="WeatherScrollingActivity">WeatherScrollingActivity</string>\
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="write_city_name">Введите название города</string>
+    <string name="no_weather_on_this_moment">Нет информации о погоде на данный момент</string>
+    <string name="database_connection_error">Не удается подключиться к базе данных</string>
+    <string name="city_added">Город добавлен</string>
+    <string name="city_exists">Данный город уже существует</string>
+    <string name="check_connection">Проверьте подключение</string>
+    <string name="city_not_exists_on_server">Такого города не существует</string>
+    <string name="city_deleted">Город удален</string>
+    <string name="cancel">Отменить</string>
+    <string name="add_city_message">Добавление города</string>
+    <string name="ok">OK</string>
+    <string name="find_location">Определение местоположения</string>
+</resources>

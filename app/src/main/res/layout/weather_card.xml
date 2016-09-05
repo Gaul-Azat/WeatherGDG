@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools" >
+    <data>
+        <variable name="weather" type="com.example.azat.weathergdg.entity.weatherElements.WeatherOfHours"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="16dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_cv">
+            <RelativeLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_deep_teal_200">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{weather.getDateString()}"
+                    android:id="@+id/weather_date"
+                    android:textIsSelectable="false"
+                    android:textSize="30dp"
+                    android:textColor="@color/abc_search_url_text_selected"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="false"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weather_date"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/weather_time_list"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp">
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</layout>
